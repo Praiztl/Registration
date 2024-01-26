@@ -1,0 +1,91 @@
+/* src/components/StepOne.css */
+.form-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .form-step-one {
+    position: relative;
+    width: 100%; /* Full width */
+    max-width: 500px; /* Max width of the form */
+    background-color: #fff; /* Assuming a white form background */
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 2; /* Higher than the SVG background */
+  }
+  
+  .form-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    top: 0;
+    left: 0;
+  }
+  
+  /* Style for form elements */
+  .form-step-one form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-step-one label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .form-step-one select {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .form-step-one button {
+    padding: 10px 20px;
+    background-color: #007bff; /* Example primary color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .form-step-one button:hover {
+    background-color: #0056b3; /* Darken button on hover */
+  }
+  
+  /* Landscape styles */
+  @media (orientation: landscape) {
+    .form-step-one {
+      /* Perhaps in landscape we want the form to be to one side */
+      max-width: 60%;
+      margin-left: auto;
+    }
+    
+    /* Adjust the SVG size or position as needed */
+    .form-background {
+      width: 130%; /* Oversize the background to maintain cover */
+      height: 130%;
+      transform: translate(-15%, -15%); /* Center the background */
+    }
+  }
+  
+  /* Portrait styles */
+  @media (orientation: portrait) {
+    .form-step-one {
+      /* Center the form in portrait */
+      margin: auto;
+    }
+    
+    /* Ensure the SVG covers the device height */
+    .form-background {
+      height: 100vh;
+    }
+  }
+  
