@@ -1,7 +1,10 @@
 // src/index.js
 import React, { useState } from 'react';
 import StepOne from './StepOne';
-// ...import other steps
+import StepTwo from './StepTwo';
+import StepThree from './StepThree';
+import StepFour from './StepFour';
+
 
 const RegistrationForm = () => {
   const [currentStep, setCurrentStep] = useState(1);
