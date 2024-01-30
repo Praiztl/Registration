@@ -4,11 +4,11 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #7a5230; /* The dark brown background */
+  background-color: #5F130F; /* The dark brown background */
 }
 
 .step-container {
-  background-color: #a67c52; /* Lighter brown for the step container */
+  background-color: #661712 /* Lighter brown for the step container */
   border-radius: 8px;
   padding: 1.5rem;
   width: 80%;
