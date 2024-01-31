@@ -1,10 +1,9 @@
 // RegistrationForm.js
 import React, { useState } from 'react';
 import './RegistrationForm.css'; // Import the CSS file
-
+import {ReactComponent as BackgroundSvg } from '../assets/LReg1.svg';
 const RegistrationForm = () => {
   const [step, setStep] = useState(1);
-
   const nextStep = () => {
     if (step < 5) {
       setStep(step + 1);
@@ -90,7 +89,7 @@ const RegistrationForm = () => {
       <div className="step-container">
         <div className="header">
           <div className="back-button" onClick={prevStep}>&#x3c;</div>
-          <div className="step-counter">Step {step} / 4</div>
+          <div className="step-counter">Step {step} / 5</div>
         </div>
         {StepContent()}
       </div>

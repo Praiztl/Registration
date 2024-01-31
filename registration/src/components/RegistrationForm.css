@@ -1,14 +1,30 @@
 /* RegistrationForm.css */
 .container {
+  position: relative; /* This allows absolute positioning relative to this container */
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #5F130F; /* The dark brown background */
+  padding: 20px;
 }
 
+.background-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  z-index: -1; /* Places the SVG behind the form content */
+}
+.form-content {
+  position: relative; /* Ensures the form content is positioned above the background */
+  background-color: #fff; /* Your desired background color */
+  border-radius: 10px;
+  padding: 20px;
+  z-index: 1; /* Higher z-index than the SVG background */
+}
 .step-container {
-  background-color: #661712 /* Lighter brown for the step container */
+  background-color: #5F130F; /* Lighter brown for the step container */
   border-radius: 8px;
   padding: 1.5rem;
   width: 80%;
