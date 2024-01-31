@@ -1,12 +1,24 @@
 /* RegistrationForm.css */
+body {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  
+}
+
 .container {
   position: relative; /* This allows absolute positioning relative to this container */
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  padding: 20px;
+  padding: 0;
+  margin: 0;
+  background-image: url("../assets/REGISTRATION_LANDSCAPE_2.png");
+ background-size: cover;
+ /*box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.4);*/ /*density control, looked too bright? remove comment*/
 }
+
 
 .background-svg {
   position: absolute;
