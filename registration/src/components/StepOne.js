@@ -11,7 +11,7 @@ const StepOne = ({ nextStep }) => {
     <h2 className="coun">Country</h2>
       <select className="select">
         <option>Select Country</option>
-        {/* Add country options here */}
+        {/* country options here */}
       </select>
       <label className="label"> 
         <input type="checkbox" className="checkbox" />

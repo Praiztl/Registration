@@ -42,7 +42,7 @@ body {
   z-index: 1; /* Higher z-index than the SVG background */
 }
 .step-container {
-  background-color: #5F130F; /* Lighter brown for the step container */
+  background-color: #A1534E; /* Lighter brown for the step container */
   border-radius: 8px;
   padding: 1.5rem;
   width: 80%;
@@ -69,13 +69,13 @@ body {
 
 .button {
   color: #fff;
-  background-color: black;
+  background-color: #5F130F;
   color: white;
-  padding: 12px 90px;
-  border: 2px solid black;
-  border-radius: 15px; 
+  padding: 12px 70px;
+  border: 2px solid #5F130F;
+  border-radius: 20px; 
   cursor: pointer; 
-  font-size: 2em
+  font-size: 1.5em
 }
 
 .button:hover {
@@ -90,11 +90,10 @@ body {
 
 .input,
 .select {
-  width: 65%;
-  padding: 12px;
+  width: 55%;
+  padding: 12px ;
   margin-bottom: 1rem;
   box-sizing: border-box;
-  border: 2px solid #fff; /* White border */
   border-radius: 20px; /* Rounded edges */
   background-color: transparent; /* Transparent background */
   color: #fff;
@@ -102,7 +101,7 @@ body {
 
 .checkbox {
   margin-right: 10px;
-  outline: 2px solid black; 
+  outline: 0.5px grey; 
   transform: scale(1.6);
 background: transparent;
 }
