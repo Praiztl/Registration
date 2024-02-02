@@ -18,11 +18,23 @@ body {
  background-size: cover;
  /*box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.4);*/ /*density control, looked too bright? remove comment*/
 }
- .globe{
+.globe {
   display: flex;
   justify-content: space-between;
   align-items: center;
- }
+  color: #c9c7c7;
+}
+
+.globe-with-text {
+  display: flex;
+  align-items: center;
+}
+
+.globe-text {
+  margin-left: 10px; /* Adjust as needed */
+  color: #c9c7c7; /* Match the color of the globe or as desired */
+  font-size: 16px; /* Or any size you prefer */
+}
 
 
 .background-svg {
@@ -58,9 +70,19 @@ body {
 }
 
 .back-button {
-  color: #fff; /* White color for the back arrow */
+  background-color: #a1534ed5;
+  border: none;
+  padding: 10px 20px;
+  cursor: default; /* Change cursor to default arrow */
   font-size: 24px;
-  cursor: pointer;
+  margin-right: 8px; /* Spacing between buttons */
+  margin-left: -10px; /* Shift to the left by 10px */
+  color: #ffff;
+}
+
+
+.back-button:hover {
+  background-color: #835754d5;
 }
 
 .step-counter {
@@ -79,7 +101,7 @@ body {
 }
 
 .button:hover {
-  background-color: #d08a6d; /* Slightly lighter on hover */
+  background-color: #d37750; /* Slightly lighter on hover */
 }
 
 .step-title {
@@ -112,7 +134,8 @@ background: transparent;
   align-items: center;
   color: #fff;
   font-size: 14px;
-  margin-bottom: 1rem;
+  width: 100%; 
+  margin-bottom: 2rem;
 }
 
 .text {
@@ -130,4 +153,45 @@ background: transparent;
 
 .link:hover {
   color: #fff; /* White color on hover for a visual feedback */
+}
+.step-indicator {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.step {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #ddd;
+  margin: 0 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+}
+
+.step.active {
+  background-color: blue;
+  color: white;
+}
+
+.rect-indicator-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0px; /* Adjust as needed */
+}
+
+.rect-indicator {
+  width: 9px; /* Width of the rectangle */
+  height: 5px; /* Height of the rectangle */
+  background-color: white; /* Default color */
+  margin: 0 5px; /* Even spacing between rectangles */
+  transition: background-color 0.3s; /* Smooth transition for color change */
+}
+
+.rect-indicator--active {
+  background-color: blue; /* Active color */
 }

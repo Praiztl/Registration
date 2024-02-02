@@ -1,5 +1,14 @@
-.coun{
-    font-size: 1.5em;
+.coun {
+    font-size: 1.2em;
+    margin-left: 2px; /* Adjust the margin as needed */
+    margin-top: 0%;
+    margin-bottom: 0%;
+
+  }
+  .country-container {
+    display: flex;
+    align-items: center; /* Vertically center the contents */
     color: gray;
-    margin-bottom: 0;
-}
+    margin-top: 0%;
+  }
+  
