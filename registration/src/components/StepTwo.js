@@ -10,7 +10,7 @@ const StepTwo = ({ nextStep }) => {
       <input className="input" type="text" placeholder="Input username" />
       <button className="button" onClick={nextStep}>Proceed</button>
       <p className="text">OR CONTINUE WITH:</p>
-      {/* Include social media login buttons here */}
+      {/* social media login buttons here */}
       <p className="text">Already have an account? <a href="#" className="link">Sign in</a></p>
     </>
   );

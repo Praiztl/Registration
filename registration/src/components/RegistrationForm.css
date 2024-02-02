@@ -1,4 +1,4 @@
-/* RegistrationForm.css */
+
 body {
   margin: 0;
   padding: 0;
@@ -31,9 +31,9 @@ body {
 }
 
 .globe-text {
-  margin-left: 10px; /* Adjust as needed */
-  color: #c9c7c7; /* Match the color of the globe or as desired */
-  font-size: 16px; /* Or any size you prefer */
+  margin-left: 10px; 
+  color: #c9c7c7;
+  font-size: 16px; 
 }
 
 
@@ -47,7 +47,7 @@ body {
 }
 .form-content {
   position: relative; /* Ensures the form content is positioned above the background */
-  background-color: #fff; /* Your desired background color */
+  background-color: #fff; 
   border-radius: 10px;
   padding: 20px;
   margin-top: 0;
